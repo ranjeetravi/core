@@ -40,6 +40,8 @@ import org.jboss.weld.manager.BeanManagerImpl;
 @Priority(Interceptor.Priority.PLATFORM_BEFORE + 100)
 public class ActivateRequestContextInterceptor extends AbstractActivateRequestContextInterceptor {
 
+    public ActivateRequestContextInterceptor(){
+    }
     @Inject
     public ActivateRequestContextInterceptor(@Unbound RequestContext requestContext, BeanManagerImpl beanManager) {
         super(requestContext, beanManager);
